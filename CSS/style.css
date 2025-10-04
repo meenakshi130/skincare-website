@@ -1,0 +1,197 @@
+/* css reset */
+*{
+    margin:0;
+    padding: 0;
+}
+/*css variables*/
+:root {
+    --navbar-height: 59px;
+}
+/* navigation bar*/
+ #navbar{
+    position: relative;
+    display: flex;
+align-items: center;   
+}
+ /*navigation bar: image & items*/
+img{
+    margin: 10px 25px;
+}
+#logo img{
+margin: 3px 4px;
+height: 54px;
+}
+ /*navigation bar: list styling*/
+ #navbar ul{
+    display:flex;
+ }
+ #navbar::before{
+    content: "";
+    background-color: rgb(223, 174, 77);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 100.10;
+ }
+ #navbar ul li{
+    list-style: none ;
+    font-size: medium;
+ }
+ #navbar ul li a{
+color: black;
+padding: 3px 22px;
+border-radius: 20px;
+text-decoration: none ;
+display: block; 
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+} 
+/*homesection*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 100px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../bgg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+ }
+ #home h1{
+    text-align: center;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ #home p{
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+    padding: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ /*utility classes*/
+ #home button{
+    padding: 2px 15px;
+    color: black;
+    background-color:rgb(240, 214, 163);
+    margin: 15px;
+    font-size: 15px ;
+    cursor: pointer;
+    border-radius: 34px;
+ }
+ .h-primary{
+    font-size: 2rem;
+    padding: 12px;
+    align-items: center;
+ }
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+    align-items: center;
+ }
+ /* intro section*/
+ #intro{
+   margin-top: 66px;
+   height: 40%;
+ }
+ #intro:before{
+    content: "";
+    background: url('../back.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+ }
+ #Services{
+   margin: 10px;
+   display: flex;
+ }
+ .box{
+   border: 2px solid black;
+   height: 300px;
+   width: 333px;
+   margin-top: 5px;
+   padding: 34px;
+   margin: 3px;
+   border-radius: 23px;
+   background-color: rgb(241, 231, 199);
+ }
+.box img{
+   height: 156px;
+   margin: auto;
+   display:block;
+ }
+ #types{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .typelogo img{
+   height: 200px;
+   width: 100 px;
+   margin: 15px;
+ }
+ /* typewritter animation*/
+.centre{
+  text-align: center;
+}
+.text{
+   font-size: 1.5em;
+}
+#typebox{
+   display: flex;
+}
+.typebox{
+   border: 2px solid black;
+   height: 300px;
+   width: 500px;
+   margin-top: 5px;
+   padding: 5px;
+   margin: 30px;
+   border-radius: 23px;
+   background-color: rgb(241, 231, 199);
+}
+.typebox img{
+   height: 93%;
+   width: 96%;
+   margin: 5px;
+   padding: 5px;
+}
+.typebox ul{
+   height: 93%;
+   width: 96%;
+   margin: 10px;
+   padding: 5px;
+   word-spacing: 1px;
+   line-height: 40px;
+   font-size: medium;
+   font-style:italic;
+}
+.typebox2{
+   border: 2px solid black;
+   height: 905px;
+   width: 500px;
+   margin-top: 10px;
+   line-height: 45px;
+   margin: 10px;
+   border-radius: 0px;
+   background-color: rgb(223, 209, 170);}
+   .typebox2 ul{
+      margin: 18px;
+   }
+   #products p{
+      text-align: center;
+      color: black;
+      font-size: 1.5rem;
+      padding: 12px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+   }
